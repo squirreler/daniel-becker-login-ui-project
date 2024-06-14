@@ -2,22 +2,21 @@ html, body {
     margin: 0;
     height: 100%;
     background-color: whitesmoke;
+    font-size: 16px;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: "Playpen Sans", cursive;
     font-optical-sizing: auto;
-  
     font-style: normal;
 }
 #login-panel {
     display: flex;
     width: 35%;
-    height: calc(35% + 16vw);
+    height: calc(35% + 15vw);
     min-height: 300px;
     min-width: 300px;
     justify-content: center;
@@ -25,28 +24,64 @@ body {
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
+    /*Box Shadow CSS Taken from stack overflow*/
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) ;
+}
+.title {
+    flex-basis: 1;
+    justify-content: center;
+}
+h1 {
+    font-weight: 300;
+    font-size: calc(20px + 3vw);
 }
 form {
     display: flex;
+    flex: 1.45;
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
     flex-wrap: nowrap;
-    flex-grow: 7;
-    gap: 1em;
+    row-gap: calc(1em + 2vw);
 }
-h1 {
-    
-    justify-content: center;
-    flex-grow: 1;
-    font-weight: 300;
-}
+
 input {
     width: 30vw;
-    height: calc(3vh + 5vw);
-    /* border-radius: 30px; */
+    min-width: 250px;
+    height: calc(2vh + 1vw);
     border-style: none none solid none;
-    border-color: grey;
-    /* border-bottom-color: black; */
+    border-color: rgb(89, 158, 255);
+    border-width: 3px;
+    font-size: calc(2vh + 7px);
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+input:focus-visible {
+    border-style: none none solid none;
+    outline: none;
+}
+.button {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border-style: none;
+    min-width: 180px;
+    min-height: 50px;
+    width: calc(20vw);
+    height: 5vw;
+    background-color: rgb(89, 158, 255);
+    font-size: calc(2vw + 7px);
+    color: white;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
