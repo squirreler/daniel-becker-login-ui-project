@@ -24,8 +24,8 @@ body {
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    /*Box Shadow CSS Taken from stack overflow*/
-    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) ;
+    /*Box Shadow CSS Taken from https://getcssscan.com/css-box-shadow-examples*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .title {
     flex-basis: 1;
